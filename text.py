@@ -5,23 +5,23 @@ def reqemi_tap():
     random_reqem = random.randint(1, 40)
     haqq = 6
     
-    print("1 ile 40 arasında bir reqem tapmağa çalışın. Toplam 6 haqqınız var.")
+    print("1 ile 40 arasında bir reqem tapmağa çalışın. 6 haqqınız var.")
     
     while haqq > 0:
         try:
-            tahmin = int(input("Tahmininizi daxil edin: "))
+            texmin = int(input("Texmininizi daxil edin: "))
         except ValueError:
             print("Zəhmət olmasa bir reqem daxil edin.")
             continue
         
-        if tahmin < 1 or tahmin > 40:
+        if texmin < 1 or texmin > 40:
             print("Zəhmət olmasa 1 ile 40 arasında bir reqem daxil edin.")
             continue
         
-        if tahmin == random_reqem:
+        if texmin == random_reqem:
             print("Təbriklər, doğru tapdınız!")
             break
-        elif tahmin < random_reqem:
+        elif texmin < random_reqem:
             haqq -= 1
             print(f"Yanlış, random reqem daha böyükdür. {haqq} haqqınız qaldı.")
         else:
